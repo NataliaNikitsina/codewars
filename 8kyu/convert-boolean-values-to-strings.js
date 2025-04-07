@@ -6,6 +6,6 @@
 
 // ✅SOLUTION
 function boolToWord( bool ){
-    return bool === true ? "Yes" : "No";
+    return bool ? "Yes" : "No";
 }
-console.log(boolToWord(true));
+console.log(boolToWord(false));
