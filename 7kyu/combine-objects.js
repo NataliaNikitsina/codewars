@@ -17,26 +17,6 @@
 //         assert.deepEqual(combine({}, {}, {}), {});
 //         assert.deepEqual(combine(objA, objC, {}), { a: 15, b: 20, c: 30, d: 11, e: 8 });
 
-
-//function combine(...args) {
-    // let newObj = {...obj1, ...obj2};
-    // for (let key in obj1) {
-    //     for (let prop in obj2) {
-    //         if (prop === key) {
-    //             newObj[key] = obj1[key] + obj2[prop]
-    //             delete obj2[prop];
-    //         }
-    //     }
-    // }
-    //return newObj;
-//}
-
-
-// const objA = { a: 10, b: 20, c: 30 }
-// const objB = { a: 3, c: 6, d: 3 }
-// console.log(combine(objA, objB))
-
-
 const objA = { a: 10, b: 20, c: 30 };
 const objB = { a: 3, c: 6, d: 3 };
 const objC = { a: 5, d: 11, e: 8 };
