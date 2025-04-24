@@ -58,3 +58,20 @@ function getResults(arr) {
     }
 }
 console.log(getResults(questions));
+
+// По заданию
+// function getRandomQuestion (arr) {
+//     let randomIndex = Math.floor(Math.random() * arr.length);
+//     return arr[randomIndex];
+// }
+// function getRandomComputerChoice(arr) {
+//     let randomIndex = Math.floor(Math.random() * arr.length);
+//     return arr[randomIndex];
+// }
+// function getResults(question, computerChoice) {
+//     return question.answer === computerChoice ? `The computer's choice is correct!` : `The computer's choice is wrong. The correct answer is: ${question.answer}`
+// }
+
+
+
+
