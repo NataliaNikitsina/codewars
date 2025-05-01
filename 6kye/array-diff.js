@@ -22,7 +22,7 @@ function arrayDiff(a, b) {
 // или вариант 2
 // function arrayDiff(a, b) {
 //     return a.filter(elem => !b.includes(elem))
-}
+// }
 
 console.log(arrayDiff([15,1,-14,-13,-15,10,11,-17,-19,-14,-15,20,12,-17], [15,1,-14,-13,-15,10,11,-17,-19,-14,-15,20,12])) // []
 console.log(arrayDiff([1,2,3], [1,2]))  // [3]
