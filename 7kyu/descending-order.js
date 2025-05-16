@@ -11,17 +11,10 @@
 // assert.strictEqual(descendingOrder(1021), 2110)
 // assert.strictEqual(descendingOrder(123456789), 987654321)
 function descendingOrder(n) {
-    let num = ""
-    const arr = Array.from(String(n));
-    const compareArr = (a, b) => b - a;
-    arr.sort(compareArr);
-    for (let i = 0; i < arr.length; i++) {
-        num += arr[i];
-    }
-    return Number(num)
+    return +n.toString().split('').sort((a, b) => b-a).join('')
 }
 
-console.log(descendingOrder(0));
+console.log(descendingOrder(123456789));
 
 // function descendingOrder(n){
 //     return parseInt(String(n).split('').sort().reverse().join(''))
