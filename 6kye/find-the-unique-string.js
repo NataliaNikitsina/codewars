@@ -10,10 +10,9 @@
 
 function findUniq(arr) {
     for (let i = 0; i < arr.length; i++) {
-        const newArr = [...arr];
-        newArr.splice(i, 1)
+        const newStringOfArr = [arr.slice(0 , i), arr.slice(i + 1)].join().toLowerCase();
         for (let j = 0; j < arr[i].length; j++) {
-            if (!newArr.join('').toLowerCase().includes(arr[i][j].toLowerCase())) {
+            if (!newStringOfArr.includes(arr[i][j].toLowerCase())) {
                 return arr[i]
             }
         }

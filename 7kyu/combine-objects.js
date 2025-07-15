@@ -33,9 +33,9 @@ const objD = { c: 3 };
 //     return result;
 // }
 
-console.log(combine(objA, objB, objC));
 
-function combine() {
+
+/*function combine() {
     let obj = {}
     for (let i = 0; i < arguments.length; i++) {
         for (let key in arguments[i]) {
@@ -43,4 +43,35 @@ function combine() {
         }
     }
     return obj;
+}*/
+
+
+function combine(obj1, obj2) {
+    let newObj = {...obj1, ...obj2};
+    for (let key in obj1) {
+        for (let prop in obj2) {
+            if (prop === key) {
+                newObj[key] = obj1[key] + obj2[prop]
+                delete obj2[prop];
+            }
+        }
+    }
+    return newObj;
 }
+console.log(combine(objA, objB, objC));
+
+// function solve(obj1, obj2) {
+//     let c = Object.assign({}, obj1)
+//     for (let key in obj2) {
+//         if (c.hasOwnProperty(key)) {
+//             c[key] += obj2[key]
+//
+//         }
+//         else {
+//             c[key] = obj2[key]
+//         }
+//
+//     }
+// return c
+// }
+// console.log(solve(a,b))

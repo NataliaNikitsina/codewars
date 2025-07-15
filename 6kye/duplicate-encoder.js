@@ -23,3 +23,9 @@ function duplicateEncode(word) {
 }
 
 console.log(duplicateEncode("Success"));
+
+
+
+
+
+

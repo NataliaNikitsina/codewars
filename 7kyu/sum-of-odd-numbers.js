@@ -13,7 +13,7 @@
 // assert.strictEqual(rowSumOddNumbers(1), 1);
 // assert.strictEqual(rowSumOddNumbers(42), 74088);
 function rowSumOddNumbers(n) {
-    // return Math.pow((n*(n+1)/2), 2) - Math.pow(((n-1)*n/2), 2);
+    // return Math.pow((n*(n+1)/2), 2) - Math.pow(((n-1)*n/2), 2); вручную преобразовав эту формулу, получится n3
     return n*n*n;
 }
 
